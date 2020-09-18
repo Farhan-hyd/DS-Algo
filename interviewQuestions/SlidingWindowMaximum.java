@@ -23,6 +23,13 @@ public class SlidingWindowMaximum {
 				return a;
 			}
 
+			if(n<=k){   
+        int max=0;
+        for(int i=0;i<n;i++) max=Math.max(max,a[i]);
+        int ans[]={max};
+        return ans;
+    }
+
 			Deque<Integer> dq = new LinkedList<>();
 			int ans[] = new int[n - k + 1];
 
